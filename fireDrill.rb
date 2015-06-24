@@ -9,9 +9,9 @@ def showLayout
   #Provides mapping of int to student
   puts "      --------------FIND YOUR KEY HERE---------------"
   puts "      01 = Allie  02 = Gavin  03 = Elliana  04 = Lydia"
-  puts "      05 = ayaan  06 = Caitlin  07 = pcarbone1997  08 = gjohnson149"
-  puts "      09 = bourjasc  10 = JPFLED  11 = 1MrSelect  12 = mguynn"
-  puts "      13 = TankBank  14 = empty  15 = empty  16 = empty"
+  puts "      05 = Ayaan  06 = Caitlin  07 = Paul  08 = Gina"
+  puts "      09 = Charbel  10 = Jillian  11 = Chris  12 = Mackenzie"
+  puts "      13 = Braydon  14 = empty  15 = empty  16 = empty"
   
   puts"\n\n\n"
   
