@@ -21,6 +21,7 @@ def showLayout
   puts "      #{shuffledList[4]}  #{shuffledList[5]}  __________  #{shuffledList[6]}  #{shuffledList[7]}"
   puts "      ***************************"
   puts "      ***************************" 
+  puts "      ***************************" 
   puts "      #{shuffledList[8]}  #{shuffledList[9]}  __________  #{shuffledList[10]}  #{shuffledList[11]}"
   puts "      #{shuffledList[12]}  #{shuffledList[13]}  __________  #{shuffledList[14]}  #{shuffledList[15]}"
 
