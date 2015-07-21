@@ -8,15 +8,15 @@ def showLayout
   
   #Provides mapping of int to student
   puts "      --------------FIND YOUR KEY HERE---------------"
-  puts "      01 = Allie  02 = Gavin  03 = Elliana  04 = Lydia"
-  puts "      05 = Ayaan  06 = Caitlin  07 = Paul  08 = Gina"
-  puts "      09 = Charbel  10 = Jillian  11 = Chris  12 = Mackenzie"
-  puts "      13 = Braydon  14 = empty  15 = empty  16 = empty"
+  puts "      01 = Shulie  02 = Julian  03 = George  04 = Hayley"
+  puts "      05 = Andrew  06 = Derek  07 = Ben  08 = Samir"
+  puts "      09 = Katie  10 = Katy  11 = James  12 = Chloe"
+  puts "      13 = Anna  14 = Michael  15 = Maysun  16 = Abigail"
   
   puts"\n\n\n"
   
   #prints actual display of the room, from front to back 
-  puts "                        Jeff/Jamie"
+  puts "                        Sarika/Jamie"
   puts "      #{shuffledList[0]}  #{shuffledList[1]}  __________  #{shuffledList[2]}  #{shuffledList[3]}"
   puts "      #{shuffledList[4]}  #{shuffledList[5]}  __________  #{shuffledList[6]}  #{shuffledList[7]}"
   puts "      ***************************"
