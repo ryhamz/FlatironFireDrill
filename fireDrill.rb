@@ -1,41 +1,47 @@
 def showLayout
-  initialList = ('1'..'16').to_a
-  shuffledList = initialList.shuffle
-  shuffledList = shuffledList.collect {|s| formatString(s)}
+  initialList = ["Shulie" , "Julian", "George", "Hayley", "Andrew" , "Derek", "Ben" , "Samir", "Katie", "Katy" , "James" , "Chloe" , "Anna" , "Michael" , "Maysun", "Abigail"]
+  initialList = initialList.shuffle
+
+  i = 0
+  maxstring = 0
+  while(i<initialList.length)
+    if initialList[i].length >= maxstring
+      maxstring = initialList[i].length 
+     
+    end
+      i+=1
+  end
+  j = 0
+  while j<initialList.length
+    while initialList[j].length<maxstring
+      initialList[j] = initialList[j] + " "
+
+    end
+    j+=1
+  end
   
   #clears terminal for easy viewing
   system("clear")
   
   #Provides mapping of int to student
-  puts "      --------------FIND YOUR KEY HERE---------------"
-  puts "      01 = Shulie  02 = Julian  03 = George  04 = Hayley"
-  puts "      05 = Andrew  06 = Derek  07 = Ben  08 = Samir"
-  puts "      09 = Katie  10 = Katy  11 = James  12 = Chloe"
-  puts "      13 = Anna  14 = Michael  15 = Maysun  16 = Abigail"
-  
-  puts"\n\n\n"
-  
+
+
   #prints actual display of the room, from front to back 
-  puts "                        Sarika/Jamie"
-  puts "      #{shuffledList[0]}  #{shuffledList[1]}  __________  #{shuffledList[2]}  #{shuffledList[3]}"
-  puts "      #{shuffledList[4]}  #{shuffledList[5]}  __________  #{shuffledList[6]}  #{shuffledList[7]}"
-  puts "      ***************************"
-  puts "      ***************************" 
-  puts "      ***************************" 
-  puts "      #{shuffledList[8]}  #{shuffledList[9]}  __________  #{shuffledList[10]}  #{shuffledList[11]}"
-  puts "      #{shuffledList[12]}  #{shuffledList[13]}  __________  #{shuffledList[14]}  #{shuffledList[15]}"
+  puts maxstring
+  puts "                      Sarika/Jamie"
+  puts "      #{initialList[0]} #{initialList[1]}  __________  #{initialList[2]} #{initialList[3]}"
+  puts "      #{initialList[4]} #{initialList[5]}  __________  #{initialList[6]} #{initialList[7]}"
+  puts "      ********************************************" 
+  puts "      ********************************************" 
+  puts "      ********************************************" 
+  puts "      #{initialList[8]} #{initialList[9]}  __________  #{initialList[10]} #{initialList[11]}"
+  puts "      #{initialList[12]} #{initialList[13]}  __________  #{initialList[14]} #{initialList[15]}"
 
 #adds me to the back of the classroom
-puts"\n                   Ryan"
+puts"\n                          Ryan"
   
 end
 
-def formatString(str)
-  if (str.to_i < 10)
-    '0' + str
-  else
-    str
-  end
-end
+
 
 showLayout
